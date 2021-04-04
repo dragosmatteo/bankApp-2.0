@@ -1,13 +1,7 @@
 'use strict';
 
 /////////////////////////////////////////////////
-/////////////////////////////////////////////////
 // !! BANKIST APP
-
-/////////////////////////////////////////////////
-// Data
-
-// DIFFERENT DATA! Contains movement dates, currency and locale
 
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -268,7 +262,7 @@ btnLogin.addEventListener('click', function (e) {
       // labelDate.textContent = `${day}/${mounth}/${year},${hour}:${min}`;
 
       const now = new Date();
-      const options = { // optiuni la afisare
+      const options = {             // optiuni la afisare
         hour : 'numeric',        
         minute : 'numeric',
         day : 'numeric',
@@ -279,7 +273,7 @@ btnLogin.addEventListener('click', function (e) {
       };
 
       
-      // const locale = navigator.language; // tara asta 
+      // const locale = navigator.language;       // tara asta 
       // console.log(locale);
       
       labelDate.textContent = new Intl.DateTimeFormat(currentAccount.locale, options).format(now);
