@@ -273,7 +273,7 @@ btnLogin.addEventListener('click', function (e) {
       };
 
       
-      // const locale = navigator.language;       // tara asta 
+      // const locale = navigator.language;       
       // console.log(locale);
       
       labelDate.textContent = new Intl.DateTimeFormat(currentAccount.locale, options).format(now);
